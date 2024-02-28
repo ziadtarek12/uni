@@ -1,0 +1,5 @@
+WSL
+NOTION
+VSCODE
+Whatsapp
+
