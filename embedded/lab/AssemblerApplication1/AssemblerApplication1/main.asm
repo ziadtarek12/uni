@@ -7,8 +7,3 @@
 
 
 .ORG 00 
-.EQU LED = 0x5
-Loop:
-LDI r16, 1
-OUT LED, r16
-JMP Loop
