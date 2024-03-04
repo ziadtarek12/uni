@@ -1,0 +1,46 @@
+\documentclass{book}
+
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{algorithm2e}
+
+
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries Linear Algebra \par}
+		\vspace{1cm}
+		{\Large\itshape This is the book of the half blood prince\par}	
+	\end{titlepage}
+	
+	\chapter{The Essence of Linear Algebra}
+	
+	\chapter{The Geometry of Linear Equations}
+	\section*{Row Picture}
+	When thinking of solving linear equations one image always prevail in our minds, This image is called the Row Picture.
+	\newline Let's say you have a system of linear equations of equal inputs and outputs.
+	\newline$x - 2y = 1 \newline 3x + 2y = 11$ 
+	\newline Most people will instantly think of the Row Picture. This is two equations of two lines if we draw tmhem 
+	they intersect in a point that is our solution.
+	And if we extend this to three equations it would just be three planes that intersect in a point. 
+	\newline This picture quickly gets harder to imagine as we increase the dimensionality beyond what we can conceive.
+	
+	\section*{Column Picture}
+	 Contrary to the row picture were we think of the system of equations as $A\vec{X} = \vec{B}$, where A is the coefficient matrix and X and B are the the unknown vector and and the result vector.
+	 In the column picture we permutate the equations so instead of  $A\times\vec{X} = \vec{B}$ it is a linear combinations of the columns of the matrix A using the coefficients of the unknown vector. $x\times\vec{col1} + y\times\vec{col2} = \vec{b}$ this new picture enables us to think that any system of linear equations is merely a linear combination of basis vector given by the coefficients.
+	 \newline Using this notion of linear combinations a new term merged to describe all possible solutions $\vec{b}$ to the columns of the matrix coefficients. Which is really just the span of the liner combinations of those columns. The term for that span is Column Space.
+	 \newline Now the column picture comes in handy when dealing with higher dimensions and lessens our headache when thinking of the possible solutions, rank and many things that will be introduced.
+	 
+	 \section*{When could it go wrong}
+	 Up till now we always assumed that we can find a solution to our liner system however in many cases that is not true.
+	 but before trying to know how to know if there is a solution or not we learned what it means to find a solution to our equations in both row and column picture. Whether it is a point of intersection in space or the weights of a liner combinations of vectors.
+	 \newline But what does it mean to have no solution. Let's first look at the row picture. Think of the two lines that intersects in a point what would happen if these two lines are parallel? Well that is a problem because that means they never intersect and thus there is no solution. Ok but what is they are the same line? Well that means they intersect in infinitely many points thus an infinite number of solutions.
+	 \newline What about the column picture? Well imagine having two vectors that are on the same extension. That causes a problem as any linear combination of these two can only generate a vector on the same extension meaning that there are all the space but this line that we can't solve, and if your $\vec{b}$ is in that region then you don't have a solution. But what if your $\vec{b}$ is on the same extensions? well know you have infinitely many solutions as there are an infinite number of combinations to get that vector. Think of two number that sum to 1 there are an infinite combination that sum to 1, exactly.
+	 
+	 While thinking of the column picture in the last paragraph you probably noticed that our columns can span different things. They can span the whole 2d space, a line(1d). And if you think of a higher dimension like 3d three vectors can span it all or only a 2d plan and so on. To measure what a set of vectors can span we defined a new term called \textbf{\textit{Rank}}.
+	 
+	 
+\end{document}

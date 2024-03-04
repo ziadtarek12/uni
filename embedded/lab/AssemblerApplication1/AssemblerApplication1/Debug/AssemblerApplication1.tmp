@@ -22,6 +22,7 @@
   <FILE>AssemblerApplication1.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <Loop><FILE>\\wsl.localhost\Ubuntu\home\ziad\uni\embedded\lab\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>11</LINE></Loop>
+  <BACK><FILE>\\wsl.localhost\Ubuntu\home\ziad\uni\embedded\lab\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>13</LINE></BACK>
+  <HERE><FILE>\\wsl.localhost\Ubuntu\home\ziad\uni\embedded\lab\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>14</LINE></HERE>
  </LABELS>
 </ASSEMBLER_INFO>
